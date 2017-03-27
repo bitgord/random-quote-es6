@@ -1,6 +1,4 @@
-(function(app) {
-
-  class QuoteService {
+export class QuoteService {
     constructor() {
       this.quotes = sampleQuotes;
     }
@@ -14,9 +12,7 @@
     }
   }
 
-  app.QuoteService = QuoteService;
-
-  var sampleQuotes = [
+  const sampleQuotes = [
     {
       "line": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
       "author": "Brian W. Kernighan"
@@ -58,5 +54,3 @@
       "author": "Tom Cargill"
     }
   ];
-
-})(window.app || (window.app = {}));
